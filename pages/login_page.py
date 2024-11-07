@@ -13,8 +13,10 @@ class LoginPage(Page):
 
     def log_in(self):
         sleep(2)
+        self.wait_to_be_clickable(*self.EMAIL_FIELD)
         self.input_text('d.chkuaseli@yahoo.com', *self.EMAIL_FIELD)
         sleep(2)
+        self.wait_to_be_clickable(*self.PASSWORD_FIELD)
         self.input_text('Sereli1977', *self.PASSWORD_FIELD)
         sleep(2)
         self.wait_to_be_clickable_click(*self.CONTINUE_BUTTON)

@@ -18,7 +18,8 @@ class MainPage(Page):
 
 
     def open_main(self):
-     self.open('https://soft.reelly.io/')
+        self.open('https://soft.reelly.io/')
+        sleep(3)
 
     def click_main_menu(self):
         sleep(5)
